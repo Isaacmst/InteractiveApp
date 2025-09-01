@@ -2677,9 +2677,9 @@ RectTransform:
   - {fileID: 516485005}
   m_Father: {fileID: 273792485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -166, y: 379}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -160, y: -100}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1622278688
@@ -2946,6 +2946,7 @@ GameObject:
   - component: {fileID: 1823783336}
   - component: {fileID: 1823783335}
   - component: {fileID: 1823783334}
+  - component: {fileID: 1823783337}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -3016,7 +3017,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1823783335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1823783337}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Bot\xF3n 3"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1823783335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3055,6 +3068,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823783332}
   m_CullTransparentMesh: 1
+--- !u!114 &1823783337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823783332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fa8aca23085457c9b423e77f941603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHandler
 --- !u!1 &1829701811
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,6 +3092,7 @@ GameObject:
   - component: {fileID: 1829701815}
   - component: {fileID: 1829701814}
   - component: {fileID: 1829701813}
+  - component: {fileID: 1829701816}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -3137,7 +3163,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1829701814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1829701816}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Bot\xF3n 1  "
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1829701814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3176,6 +3214,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829701811}
   m_CullTransparentMesh: 1
+--- !u!114 &1829701816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829701811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fa8aca23085457c9b423e77f941603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHandler
 --- !u!1 &2055777854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,6 +3238,7 @@ GameObject:
   - component: {fileID: 2055777858}
   - component: {fileID: 2055777857}
   - component: {fileID: 2055777856}
+  - component: {fileID: 2055777859}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -3258,7 +3309,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2055777857}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2055777859}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Bot\xF3n 2"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2055777857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3297,6 +3360,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055777854}
   m_CullTransparentMesh: 1
+--- !u!114 &2055777859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055777854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fa8aca23085457c9b423e77f941603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHandler
 --- !u!1 &2110837443
 GameObject:
   m_ObjectHideFlags: 0
